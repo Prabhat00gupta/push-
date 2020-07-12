@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+<session-factory>
+
+
+<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+<property name="connection.url">jdbc:mysql://localhost:3306/amazonprime</property>
+<property name="connection.user">root</property>
+<property name="connection.password">root</property>
+
+<property name="dialet">org.hibernate.dialect.MySQLDialect</property>
+
+<property name="show_sql">true</property>
+
+<property name="hbm2ddl.auto">update</property>
+
+<mapping class="com.amazonprime.User"/>
+<mapping class="com.amazonprime.YourWatchlist"/>
+<mapping class="com.amazonprime.AccountAndSettings"/>
+<mapping class="com.amazonprime.WatchAnywhere"/>
+<mapping class="com.amazonprime.Help"/>
+<mapping class="com.amazonprime.SignOut"/>
+<mapping class="com.amazonprime.YourWatchlistInfo"/>
+<mapping class="com.amazonprime.YourAccount"/>
+<mapping class="com.amazonprime.PlayBack"/>
+<mapping class="com.amazonprime.ParentalControls"/>
+
+<mapping class="com.amazonprime.Subtitles"/>
+<mapping class="com.amazonprime.YourDevices"/>
+<mapping class="com.amazonprime.Language"/>
+<mapping class="com.amazonprime.WatchHistory"/>
+<mapping class="com.amazonprime.WatchAnywhereInfo"/>
+<mapping class="com.amazonprime.HelpInfo"/>
+<mapping class="com.amazonprime.YourAccountDetails"/>
+<mapping class="com.amazonprime.Autoplay"/>
+<mapping class="com.amazonprime.PrimeVideoPin"/>
+<mapping class="com.amazonprime.SubtitlesOptions"/>
+<mapping class="com.amazonprime.YourDevicesInfo"/>
+<mapping class="com.amazonprime.WebsiteLanguage"/>
+<mapping class="com.amazonprime.Home"/>
+<mapping class="com.amazonprime.TVShows"/>
+<mapping class="com.amazonprime.Movies"/>
+<mapping class="com.amazonprime.Kids"/>
+<mapping class="com.amazonprime.AmazonOriginalSeries"/>
+<mapping class="com.amazonprime.WatchNextTvAndMovies"/>
+<mapping class="com.amazonprime.RecommendedMovies"/>
+<mapping class="com.amazonprime.AmazonOriginalSeriesInfo"/>
+<mapping class="com.amazonprime.WatchNextTvAndMoviesInfo"/>
+<mapping class="com.amazonprime.RecommendedMoviesInfo"/>
+<mapping class="com.amazonprime.ThrowBackTv"/>
+<mapping class="com.amazonprime.ThrowBackTvInfo"/>
+<mapping class="com.amazonprime.ThrillerTv"/>
+<mapping class="com.amazonprime.DramaTv"/>
+
+<mapping class="com.amazonprime.ThrillerTvInfo"/>
+<mapping class="com.amazonprime.DramaTvInfo"/>
+<mapping class="com.amazonprime.HollywoodMovies"/>
+<mapping class="com.amazonprime.TeluguMovies"/>
+<mapping class="com.amazonprime.MoviesInHindi"/>
+<mapping class="com.amazonprime.HollywoodMoviesInfo"/>
+<mapping class="com.amazonprime.TeluguMoviesInfo"/>
+<mapping class="com.amazonprime.MoviesInHindiInfo"/>
+<mapping class="com.amazonprime.IndianToons"/>
+<mapping class="com.amazonprime.ComedyMovies"/>
+<mapping class="com.amazonprime.ComedyTv"/>
+<mapping class="com.amazonprime.IndianToonsInfo"/>
+<mapping class="com.amazonprime.ComedyMoviesInfo"/>
+<mapping class="com.amazonprime.ComedyTvInfo"/>
+
+
+</session-factory>
+</hibernate-configuration>
